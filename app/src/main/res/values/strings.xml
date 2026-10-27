@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AppMotoTrack</string>
+    <string name="app_name" translatable="false">MotoTrack</string>
+    <string name="login">Login</string>
+    <string name="sign">Sign-Up</string>
 </resources>
