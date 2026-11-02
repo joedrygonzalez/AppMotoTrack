@@ -24,11 +24,30 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17.5dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/CV_SettingsMainMenu"
+        app:layout_constraintEnd_toStartOf="@id/CV_RemainderMainMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/MotoSlideImg">
+        app:layout_constraintTop_toBottomOf="@id/MotoSlideImg"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <LinearLayout
+            android:id="@+id/IconMenuStats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_stats"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -36,12 +55,30 @@
         android:id="@+id/CV_RemainderMainMenu"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="17.5dp"
         android:layout_marginEnd="35dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/CV_MotorcycleMainMenu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/CV_StatsMainMenu"
         app:layout_constraintTop_toBottomOf="@id/MotoSlideImg">
+
+        <LinearLayout
+            android:id="@+id/IconMenuRemainders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_remainder"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -50,133 +87,154 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17.5dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/BottomMenu"
+        app:layout_constraintEnd_toStartOf="@id/CV_MotorcycleMainMenu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/CV_StatsMainMenu">
+
+        <LinearLayout
+            android:id="@+id/IconMenuAccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_account_box"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/CV_AccountMainMenu"
+        android:id="@+id/CV_MotorcycleMainMenu"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="17.5dp"
         android:layout_marginEnd="35dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/BottomMenu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/CV_SettingsMainMenu"
         app:layout_constraintTop_toBottomOf="@id/CV_RemainderMainMenu">
 
+        <LinearLayout
+            android:id="@+id/IconMenuMotorcycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_motorcycle"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorSurface"
-        app:itemIconTint="?attr/colorPrimary"
-        app:itemTextColor="?attr/colorPrimary"
-        app:labelVisibilityMode="labeled"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" >
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <LinearLayout
         android:id="@+id/BottomMenu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:orientation="horizontal"
         android:background="?attr/colorSurface"
         android:elevation="8dp"
         android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <!-- INICIO -->
-        <LinearLayout
-            android:id="@+id/BtnHome"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:clickable="true"
-            android:focusable="true">
-
-            <ImageView
-                android:id="@+id/IconHome"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_home"
-                app:tint="?attr/colorPrimary"/>
-
-            <TextView
-                android:id="@+id/TextHome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Inicio"
-                android:textSize="10sp"
-                android:textColor="?attr/colorPrimary"/>
-        </LinearLayout>
-
-        <!-- ESTADÍSTICAS -->
-        <LinearLayout
-            android:id="@+id/BtnStats"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:clickable="true"
-            android:focusable="true">
-
-            <ImageView
-                android:id="@+id/IconStats"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_stats"
-                app:tint="?attr/colorOnSurfaceVariant"/>
-
-            <TextView
-                android:id="@+id/TextStats"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Estadísticas"
-                android:textSize="10sp"
-                android:textColor="?attr/colorOnSurfaceVariant"/>
-        </LinearLayout>
-
-        <!-- AVISOS -->
+        <!-- Remainders list -->
         <LinearLayout
             android:id="@+id/BtnReminders"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/IconReminders"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/ic_notifications"
-                app:tint="?attr/colorOnSurfaceVariant"/>
+                android:src="@drawable/ic_remainder"
+                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextReminders"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Avisos"
-                android:textSize="10sp"
-                android:textColor="?attr/colorOnSurfaceVariant"/>
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- ESTADÍSTICAS + GASTOS -->
+        <LinearLayout
+            android:id="@+id/BtnStats"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IconStats"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_stats"
+                app:tint="?attr/colorOnSurfaceVariant" />
+
+            <TextView
+                android:id="@+id/TextStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estadísticas"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Inicio -->
+        <LinearLayout
+            android:id="@+id/BtnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/IconHome"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_home"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/TextHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="10sp" />
         </LinearLayout>
 
         <!-- MOTOS -->
@@ -185,52 +243,52 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/IconMotos"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/ic_motorcycle"
-                app:tint="?attr/colorOnSurfaceVariant"/>
+                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextMotos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Motos"
-                android:textSize="10sp"
-                android:textColor="?attr/colorOnSurfaceVariant"/>
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="10sp" />
         </LinearLayout>
 
-        <!-- CUENTA -->
+        <!-- CUENTA + SETTINGS -->
         <LinearLayout
             android:id="@+id/BtnAccount"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/IconAccount"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/ic_account_box"
-                app:tint="?attr/colorOnSurfaceVariant"/>
+                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cuenta"
-                android:textSize="10sp"
-                android:textColor="?attr/colorOnSurfaceVariant"/>
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="10sp" />
         </LinearLayout>
 
     </LinearLayout>
