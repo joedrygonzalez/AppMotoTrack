@@ -8,6 +8,8 @@
     android:background="@color/background_light"
     tools:context=".MainActivity">
 
+    <!-- IMG CARD -->
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/MotoSlideImg"
         android:layout_width="0dp"
@@ -18,6 +20,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/FondoRedondeado" />
+
+    <!-- HELP -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV_help"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/CV_RemainderMainMenu"
+        app:layout_constraintTop_toBottomOf="@+id/MotoSlideImg">
+
+        <LinearLayout
+            android:id="@+id/IconMenuHelp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_help"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/help">
+
+            </TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ESTADÍSTICAS + GASTOS -->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_StatsMainMenu"
@@ -50,6 +93,8 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <!-- Remainders list -->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_RemainderMainMenu"
@@ -112,6 +157,8 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <!-- MOTOS -->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_MotorcycleMainMenu"
@@ -178,7 +225,7 @@
                 android:id="@+id/TextReminders"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Avisos"
+                android:text="@string/reminders"
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -205,7 +252,7 @@
                 android:id="@+id/TextStats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estadísticas"
+                android:text="@string/stats"
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -232,7 +279,7 @@
                 android:id="@+id/TextHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Inicio"
+                android:text="@string/home"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -259,7 +306,7 @@
                 android:id="@+id/TextMotos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Motos"
+                android:text="@string/motorcycle"
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -286,7 +333,7 @@
                 android:id="@+id/TextAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuenta"
+                android:text="@string/account"
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="10sp" />
         </LinearLayout>

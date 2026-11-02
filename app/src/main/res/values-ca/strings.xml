@@ -3,4 +3,10 @@
 
     <string name="login">Inici de sessió</string>
     <string name="sign">Registrar-se</string>
+    <string name="help">Ajuda</string>
+    <string name="stats">Estadístiques</string>
+    <string name="home">Inici</string>
+    <string name="reminders">Recordatoris</string>
+    <string name="account">Compte</string>
+    <string name="motorcycle">Motocicleta</string>
 </resources>

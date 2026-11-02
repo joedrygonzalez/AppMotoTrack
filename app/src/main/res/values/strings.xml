@@ -2,4 +2,10 @@
     <string name="app_name" translatable="false">MotoTrack</string>
     <string name="login">Login</string>
     <string name="sign">Sign-Up</string>
+    <string name="help">Help</string>
+    <string name="stats">Stats</string>
+    <string name="home">Home</string>
+    <string name="reminders">Reminders</string>
+    <string name="account">Account</string>
+    <string name="motorcycle">Motorcycle</string>
 </resources>

@@ -3,4 +3,10 @@
 
     <string name="login">Inicio de sesión</string>
     <string name="sign">Registrarse</string>
+    <string name="help">Ayuda</string>
+    <string name="stats">Estadísticas</string>
+    <string name="home">Inicio</string>
+    <string name="reminders">Recordatorios</string>
+    <string name="account">Cuenta</string>
+    <string name="motorcycle">Motocicleta</string>
 </resources>
