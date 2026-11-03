@@ -1,25 +1,37 @@
 package iticbcn.appmototrack
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import iticbcn.appmototrack.fragments.HomeFragment
+
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val BtnReminders = findViewById<View>(R.id.BtnReminders)
+        val BtnStats = findViewById<View>(R.id.BtnStats)
+        val BtnHome = findViewById<View>(R.id.BtnHome)
+        val BtnMotos = findViewById<View>(R.id.BtnMotos)
+        val BtnAccount = findViewById<View>(R.id.BtnAccount)
+
+        if (savedInstanceState == null) {
+            loadFragment(HomeFragment())
         }
 
+        BtnHome.setOnClickListener {
+            loadFragment(HomeFragment())
+        }
 
     }
 
-
-
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .commit()
+    }
 }
