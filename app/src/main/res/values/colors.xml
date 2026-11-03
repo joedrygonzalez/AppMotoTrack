@@ -13,6 +13,8 @@
     <color name="surface_white">#FFFFFF</color>
     <color name="background_dark">#111827</color>
     <color name="surface_dark">#1F2937</color>
+    <color name="navigationBar_light">#E9E9E9</color>
+    <color name="navigationBar_dark">#373737</color>
 
     <!-- Textos -->
     <color name="text_primary">#111827</color>

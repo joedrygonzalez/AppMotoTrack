@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light"
+    android:background="?attr/colorSurface"
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -21,7 +21,7 @@
         android:id="@+id/BottomMenu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="?attr/colorSurface"
+        android:background="?attr/colorOnSecondary"
         android:elevation="8dp"
         android:gravity="center"
         android:orientation="horizontal"
@@ -30,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <!-- Remainders list -->
+
         <LinearLayout
             android:id="@+id/BtnReminders"
             android:layout_width="0dp"
