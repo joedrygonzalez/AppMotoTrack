@@ -62,6 +62,20 @@
 
     <!-- KM total -->
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:text="KM Total"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="@id/CV_KmMotorcycle"
+        app:layout_constraintBottom_toTopOf="@+id/CV_KmMotorcycle"
+        app:layout_constraintStart_toStartOf="@+id/CV_KmMotorcycle">
+
+    </TextView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_KmMotorcycle"
         android:layout_width="150dp"
@@ -71,7 +85,7 @@
         android:layout_marginEnd="17.5dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toTopOf="@id/CV_SettingsMainMenu"
+        app:layout_constraintBottom_toTopOf="@id/CV_RemainderMotorcycleMenu"
         app:layout_constraintEnd_toStartOf="@id/CV_TripMotorcycle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/MotoSlideImg"
@@ -118,6 +132,20 @@
     </androidx.cardview.widget.CardView>
 
     <!-- Trip A to B -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:text="Last Trip"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="@id/CV_TripMotorcycle"
+        app:layout_constraintBottom_toTopOf="@+id/CV_TripMotorcycle"
+        app:layout_constraintStart_toStartOf="@+id/CV_TripMotorcycle">
+
+    </TextView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_TripMotorcycle"
@@ -238,18 +266,32 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:text="Remainder"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintEnd_toEndOf="@id/CV_RemainderMotorcycleMenu"
+        app:layout_constraintBottom_toTopOf="@+id/CV_RemainderMotorcycleMenu"
+        app:layout_constraintStart_toStartOf="@+id/CV_RemainderMotorcycleMenu">
+
+    </TextView>
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/CV_SettingsMainMenu"
+        android:id="@+id/CV_RemainderMotorcycleMenu"
         android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_height="300dp"
         android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="17.5dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/CV_MotorcycleMainMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/CV_KmMotorcycle">
+        app:layout_constraintTop_toBottomOf="@+id/CV_KmMotorcycle"
+        app:layout_constraintVertical_chainStyle="spread_inside">
 
     </androidx.cardview.widget.CardView>
 
@@ -265,7 +307,7 @@
         app:cardCornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/CV_SettingsMainMenu"
+        app:layout_constraintStart_toEndOf="@id/CV_RemainderMotorcycleMenu"
         app:layout_constraintTop_toBottomOf="@id/CV_TripMotorcycle">
 
     </androidx.cardview.widget.CardView>
