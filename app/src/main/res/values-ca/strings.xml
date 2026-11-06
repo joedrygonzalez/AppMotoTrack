@@ -4,14 +4,19 @@
     <string name="login">Inici de sessió</string>
     <string name="sign">Registrar-me</string>
     <string name="login_text">Benvingut de nou!</string>
-    <string name="textcreateaccount">"Encara no tens un compte? "</string>
+    <string name="textcreateaccount">Encara no tens un compte?</string>
     <string name="email">Correu electrònic</string>
     <string name="email_hint">correu@gmail.com</string>
-    <string name="password">contrasenya</string>
+    <string name="password">Contrasenya</string>
     <string name="help">Ajuda</string>
     <string name="stats">Estadístiques</string>
     <string name="home">Inici</string>
     <string name="reminders">Recordatoris</string>
     <string name="account">Compte</string>
     <string name="motorcycle">Motocicleta</string>
+    <string name="forgottenpass">Heu oblidat la vostra contrasenya?</string>
+    <string name="ihaveaccount">Ja tens un compte?</string>
+    <string name="confirmpassword">Confrimar Contrasenya</string>
+    <string name="sign_text">Crea un compte!</string>
+    <string name="user">Usuari</string>
 </resources>

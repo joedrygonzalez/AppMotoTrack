@@ -7,11 +7,16 @@
     <string name="textcreateaccount">"¿Aun no tienes una cuenta? "</string>
     <string name="email">Correo electrónico</string>
     <string name="email_hint">correo@gmail.com</string>
-    <string name="password">contraseña</string>
+    <string name="password">Contraseña</string>
     <string name="help">Ayuda</string>
     <string name="stats">Estadísticas</string>
     <string name="home">Inicio</string>
     <string name="reminders">Recordatorios</string>
     <string name="account">Cuenta</string>
     <string name="motorcycle">Motocicleta</string>
+    <string name="forgottenpass">¿Has olvidado tu contraseña?</string>
+    <string name="ihaveaccount">¿Ya tienes una cuenta?</string>
+    <string name="confirmpassword">Confirmar Contraseña</string>
+    <string name="sign_text">¡Crea una cuenta!</string>
+    <string name="user">Usuario</string>
 </resources>
