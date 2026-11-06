@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/FondoRedondeado" />
 
-    <!-- HELP -->
+    <!-- Help -->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_help"
@@ -53,7 +53,85 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/help">
+                android:text="Help">
+
+            </TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Change Motorcycle -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV_ChangeMotorcycle"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/CV_KmMotorcycle"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:id="@+id/IconMenuHelp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_change"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Change">
+
+            </TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- EDIT -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV_help"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@+id/CV_KmMotorcycle"
+        app:layout_constraintTop_toBottomOf="@+id/MotoSlideImg">
+
+        <LinearLayout
+            android:id="@+id/IconMenuHelp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit"
+                app:tint="?attr/colorOnSurfaceVariant">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Edit">
 
             </TextView>
         </LinearLayout>
@@ -65,13 +143,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
         android:layout_marginBottom="5dp"
-        android:textSize="20dp"
+        android:gravity="center_vertical"
         android:text="KM Total"
         android:textColor="?attr/colorOnPrimary"
-        app:layout_constraintEnd_toEndOf="@id/CV_KmMotorcycle"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_KmMotorcycle"
+        app:layout_constraintEnd_toEndOf="@id/CV_KmMotorcycle"
         app:layout_constraintStart_toStartOf="@+id/CV_KmMotorcycle">
 
     </TextView>
@@ -136,13 +214,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
         android:layout_marginBottom="5dp"
-        android:textSize="20dp"
+        android:gravity="center_vertical"
         android:text="Last Trip"
         android:textColor="?attr/colorOnPrimary"
-        app:layout_constraintEnd_toEndOf="@id/CV_TripMotorcycle"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_TripMotorcycle"
+        app:layout_constraintEnd_toEndOf="@id/CV_TripMotorcycle"
         app:layout_constraintStart_toStartOf="@+id/CV_TripMotorcycle">
 
     </TextView>
@@ -269,13 +347,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
         android:layout_marginBottom="5dp"
-        android:textSize="20dp"
+        android:gravity="center_vertical"
         android:text="Remainder"
         android:textColor="?attr/colorOnPrimary"
-        app:layout_constraintEnd_toEndOf="@id/CV_RemainderMotorcycleMenu"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_RemainderMotorcycleMenu"
+        app:layout_constraintEnd_toEndOf="@id/CV_RemainderMotorcycleMenu"
         app:layout_constraintStart_toStartOf="@+id/CV_RemainderMotorcycleMenu">
 
     </TextView>
@@ -285,7 +363,7 @@
         android:layout_width="150dp"
         android:layout_height="300dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="17.5dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
@@ -293,22 +371,256 @@
         app:layout_constraintTop_toBottomOf="@+id/CV_KmMotorcycle"
         app:layout_constraintVertical_chainStyle="spread_inside">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Remainder1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Remainder2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Remainder3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Remainder4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Remainder5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" />
+
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
     <!-- MOTOS -->
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:text="Last Change"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/CV_MotorcycleInfo"
+        app:layout_constraintEnd_toEndOf="@id/CV_MotorcycleInfo"
+        app:layout_constraintStart_toStartOf="@+id/CV_MotorcycleInfo">
+
+    </TextView>
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/CV_MotorcycleMainMenu"
+        android:id="@+id/CV_MotorcycleInfo"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="17.5dp"
-        android:layout_marginEnd="35dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17.5dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/CV_RemainderMotorcycleMenu"
-        app:layout_constraintTop_toBottomOf="@id/CV_TripMotorcycle">
+        app:layout_constraintStart_toStartOf="@+id/CV_TripMotorcycle"
+        app:layout_constraintTop_toBottomOf="@+id/CV_TripMotorcycle"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Oil"
+                android:textSize="20dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_MotorcycleInfoOil"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" >
+
+                <LinearLayout
+                    android:id="@+id/OilMotorcycleIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="?attr/colorSurface"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="10dp"
+                            android:text="KM">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="0000"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Rear Brake Fluid"
+                android:textSize="18dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_MotorcycleInfoBrakeFluidRear"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" >
+
+                <LinearLayout
+                    android:id="@+id/FBrakeFluidMotorcycleIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="?attr/colorSurface"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="10dp"
+                            android:text="KM">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="0000"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Front brake fluid"
+                android:textSize="18dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_MotorcycleInfoBrakeFluidFront"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="?attr/colorOnSecondary" >
+
+                <LinearLayout
+                    android:id="@+id/RBrakeFluidMotorcycleIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="?attr/colorSurface"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="10dp"
+                            android:text="KM">
+
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="0000"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 
