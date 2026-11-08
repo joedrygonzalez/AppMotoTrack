@@ -18,4 +18,13 @@
     <string name="confirmpassword">Confirm Password</string>
     <string name="sign_text">Create an account!</string>
     <string name="user">User</string>
+    <string name="change">Change</string>
+    <string name="edit">Edit</string>
+    <string name="kmTotal" translatable="false">Km Total</string>
+    <string name="km" translatable="false">KM</string>
+    <string name="lastTrip">Last Trip</string>
+    <string name="lastChange">Last Change</string>
+    <string name="oil">Oil</string>
+    <string name="rearBrakeFluidText">Rear Brake Fluid</string>
+    <string name="frontBrakeFluidText">Front Brake Fluid</string>
 </resources>

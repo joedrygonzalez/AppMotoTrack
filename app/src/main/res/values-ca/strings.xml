@@ -19,4 +19,11 @@
     <string name="confirmpassword">Confrimar Contrasenya</string>
     <string name="sign_text">Crea un compte!</string>
     <string name="user">Usuari</string>
+    <string name="change">Canviar</string>
+    <string name="edit">Editar</string>
+    <string name="lastTrip">"Últim Viatge "</string>
+    <string name="lastChange">Últim Canvi</string>
+    <string name="oil">Oli</string>
+    <string name="rearBrakeFluidText">Líquid de fre posterior</string>
+    <string name="frontBrakeFluidText">Líquid de fre davanter</string>
 </resources>

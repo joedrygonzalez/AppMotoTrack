@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Change">
+                android:text="@string/change">
 
             </TextView>
         </LinearLayout>
@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Edit">
+                android:text="@string/edit">
 
             </TextView>
         </LinearLayout>
@@ -145,7 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:gravity="center_vertical"
-        android:text="KM Total"
+        android:text="@string/kmTotal"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_KmMotorcycle"
@@ -187,7 +187,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="KM">
+                    android:text="@string/km">
 
                 </TextView>
 
@@ -216,7 +216,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:gravity="center_vertical"
-        android:text="Last Trip"
+        android:text="@string/lastTrip"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_TripMotorcycle"
@@ -349,7 +349,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:gravity="center_vertical"
-        android:text="Remainder"
+        android:text="@string/reminders"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_RemainderMotorcycleMenu"
@@ -423,7 +423,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:gravity="center_vertical"
-        android:text="Last Change"
+        android:text="@string/lastChange"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/CV_MotorcycleInfo"
@@ -452,7 +452,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Oil"
+                android:text="@string/oil"
                 android:textSize="20dp"
                 android:layout_height="wrap_content">
 
@@ -484,7 +484,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textSize="10dp"
-                            android:text="KM">
+                            android:text="@string/km">
 
                         </TextView>
 
@@ -508,7 +508,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Rear Brake Fluid"
+                android:text="@string/rearBrakeFluidText"
                 android:textSize="18dp"
                 android:layout_height="wrap_content">
 
@@ -540,7 +540,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textSize="10dp"
-                            android:text="KM">
+                            android:text="@string/km">
 
                         </TextView>
 
@@ -564,7 +564,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Front brake fluid"
+                android:text="@string/frontBrakeFluidText"
                 android:textSize="18dp"
                 android:layout_height="wrap_content">
 
@@ -596,7 +596,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textSize="10dp"
-                            android:text="KM">
+                            android:text="@string/km">
 
                         </TextView>
 

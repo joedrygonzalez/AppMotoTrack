@@ -19,4 +19,11 @@
     <string name="confirmpassword">Confirmar Contraseña</string>
     <string name="sign_text">¡Crea una cuenta!</string>
     <string name="user">Usuario</string>
+    <string name="change">Cambiar</string>
+    <string name="edit">Editar</string>
+    <string name="lastTrip">Último Viaje</string>
+    <string name="lastChange">Último Cambio</string>
+    <string name="oil">Aceite</string>
+    <string name="rearBrakeFluidText">Líquido de frenos trasero</string>
+    <string name="frontBrakeFluidText">Líquido de frenos delantero</string>
 </resources>
