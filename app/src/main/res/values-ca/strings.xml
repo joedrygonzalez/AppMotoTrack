@@ -26,4 +26,5 @@
     <string name="oil">Oli</string>
     <string name="rearBrakeFluidText">Líquid de fre posterior</string>
     <string name="frontBrakeFluidText">Líquid de fre davanter</string>
+    <string name="remainders">Restes</string>
 </resources>

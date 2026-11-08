@@ -26,4 +26,5 @@
     <string name="oil">Aceite</string>
     <string name="rearBrakeFluidText">Líquido de frenos trasero</string>
     <string name="frontBrakeFluidText">Líquido de frenos delantero</string>
+    <string name="remainders">Restos</string>
 </resources>

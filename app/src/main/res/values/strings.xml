@@ -27,4 +27,13 @@
     <string name="oil">Oil</string>
     <string name="rearBrakeFluidText">Rear Brake Fluid</string>
     <string name="frontBrakeFluidText">Front Brake Fluid</string>
+    <string name="remainders">Remainders</string>
+    <string name="numLastTripA" translatable="false">0000</string>
+    <string name="numLastTripB" translatable="false">0000</string>
+    <string name="numKmTotal" translatable="false">0000</string>
+    <string name="numKmOil" translatable="false">0000</string>
+    <string name="numKmRearBrake" translatable="false">0000</string>
+    <string name="numKmFrontBrake" translatable="false">0000</string>
+    <string name="A" translatable="false">A</string>
+    <string name="B">B</string>
 </resources>
