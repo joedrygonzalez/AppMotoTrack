@@ -565,7 +565,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:text="@string/frontBrakeFluidText"
-                android:textSize="18dp"
+                android:textSize="17.5dp"
                 android:layout_height="wrap_content">
 
             </TextView>
