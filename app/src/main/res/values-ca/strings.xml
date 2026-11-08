@@ -27,4 +27,26 @@
     <string name="rearBrakeFluidText">Líquid de fre posterior</string>
     <string name="frontBrakeFluidText">Líquid de fre davanter</string>
     <string name="remainders">Restes</string>
+    <string name="notification">Notificació</string>
+    <string name="about">Sobre</string>
+    <string name="maintenanceText">Recordatoris de manteniment</string>
+    <string name="maintenanceDescription">Rep recordatoris de manteniment</string>
+    <string name="reviewReminders">Recordatoris de revisió</string>
+    <string name="reviewDescription">Rep recordatoris de revisió</string>
+    <string name="settings">Configuració</string>
+    <string name="notificationDescription">Rep notificacións de la aplicació</string>
+    <string name="month">Mes</string>
+    <string name="year">Any</string>
+    <string name="summary">Resum</string>
+    <string name="total_spent">Despesa Total</string>
+    <string name="monthly_spent">Despesa del Mes</string>
+    <string name="total_accumulated">Total acumulat</string>
+    <string name="selected_period">Període seleccionat</string>
+    <string name="category">Categoria</string>
+    <string name="fuel">Gasolina</string>
+    <string name="maintenance">Manteniment</string>
+    <string name="insurance">Assegurança</string>
+    <string name="repairs">Reparacions</string>
+    <string name="tires">Pneumàtics</string>
+    <string name="others">Altres</string>
 </resources>

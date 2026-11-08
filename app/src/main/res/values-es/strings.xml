@@ -27,4 +27,26 @@
     <string name="rearBrakeFluidText">Líquido de frenos trasero</string>
     <string name="frontBrakeFluidText">Líquido de frenos delantero</string>
     <string name="remainders">Restos</string>
+    <string name="notification">Notificación</string>
+    <string name="about">Acerca de</string>
+    <string name="maintenanceText">Recordatorios de mantenimiento</string>
+    <string name="maintenanceDescription">Recibe recordatorios de mantenimiento</string>
+    <string name="reviewReminders">Recordatorios de revisión</string>
+    <string name="reviewDescription">Recibe recordatorios de revisión</string>
+    <string name="settings">Configuración</string>
+    <string name="notificationDescription">Recibe notificaciones de la aplicación</string>
+    <string name="month">Mes</string>
+    <string name="year">Año</string>
+    <string name="summary">Resumen</string>
+    <string name="total_spent">Gasto Total</string>
+    <string name="monthly_spent">Gasto del Mes</string>
+    <string name="total_accumulated">Total acumulado</string>
+    <string name="selected_period">Período seleccionado</string>
+    <string name="category">Categoría</string>
+    <string name="fuel">Gasolina</string>
+    <string name="maintenance">Mantenimiento</string>
+    <string name="insurance">Seguro</string>
+    <string name="repairs">Reparaciones</string>
+    <string name="tires">Neumáticos</string>
+    <string name="others">Otros</string>
 </resources>

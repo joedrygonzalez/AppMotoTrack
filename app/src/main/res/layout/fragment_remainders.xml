@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/remainders"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_light">
@@ -39,7 +38,8 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:paddingStart="15dp">
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
 
                     <ImageView
                         android:layout_width="50dp"
@@ -49,11 +49,11 @@
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -85,8 +85,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -118,8 +118,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -151,8 +151,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -184,8 +184,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -217,8 +217,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -250,8 +250,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="15sp"
-                        android:text="Lore ipsum" />
+                        android:text="@string/loremipsum"
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -286,8 +286,8 @@
         android:layout_height="25dp"
         android:layout_marginBottom="8dp"
         app:cardCornerRadius="16dp"
-        app:layout_constraintEnd_toEndOf="@id/CV_RemainderRemainderMenu"
-        app:layout_constraintBottom_toBottomOf="@id/TV_Reminders">
+        app:layout_constraintBottom_toBottomOf="@id/TV_Reminders"
+        app:layout_constraintEnd_toEndOf="@id/CV_RemainderRemainderMenu">
 
         <LinearLayout
             android:id="@+id/IconMenuHelp"
@@ -295,20 +295,17 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingStart="5dp">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/ic_help"
-                app:tint="?attr/colorOnSurfaceVariant" />
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Help" />
+                android:text="@string/help"
+                app:drawableStartCompat="@drawable/ic_help"
+                app:drawableTint="?attr/colorOnSurfaceVariant" />
 
         </LinearLayout>
 

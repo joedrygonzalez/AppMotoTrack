@@ -35,5 +35,30 @@
     <string name="numKmRearBrake" translatable="false">0000</string>
     <string name="numKmFrontBrake" translatable="false">0000</string>
     <string name="A" translatable="false">A</string>
-    <string name="B">B</string>
+    <string name="B" translatable="false">B</string>
+    <string name="loremipsum" translatable="false">Loren ipsum</string>
+    <string name="notification">Notification</string>
+    <string name="general" translatable="false">General</string>
+    <string name="about">About</string>
+    <string name="maintenanceText">Maintenance reminders</string>
+    <string name="maintenanceDescription">Receive maintenance reminders</string>
+    <string name="reviewReminders">Review reminders</string>
+    <string name="reviewDescription">Receive inspection reminders</string>
+    <string name="settings">Settings</string>
+    <string name="notificationDescription">Receive application notifications</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="summary">Summary</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="monthly_spent">Monthly Spent</string>
+    <string name="total_accumulated">Total accumulated</string>
+    <string name="selected_period">Selected period</string>
+    <string name="category">Category</string>
+    <string name="fuel">Fuel</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="insurance">Insurance</string>
+    <string name="repairs">Repairs</string>
+    <string name="tires">Tires</string>
+    <string name="others">Others</string>
+    <string name="zero_amount" translatable="false">0,00 €</string>
 </resources>
