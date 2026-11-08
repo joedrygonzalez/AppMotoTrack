@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_light"
-    tools:context=".MotorcycleFragment">
+    android:background="@color/background_light">
 
     <!-- IMG CARD -->
 
@@ -72,7 +71,7 @@
         app:cardCornerRadius="16dp">
 
         <LinearLayout
-            android:id="@+id/IconMenuHelp"
+            android:id="@+id/LL_ChangeMotorcycle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -102,7 +101,7 @@
     <!-- EDIT -->
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/CV_help"
+        android:id="@+id/CV_Edit"
         android:layout_width="100dp"
         android:layout_height="25dp"
         android:layout_marginTop="10dp"
@@ -111,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/MotoSlideImg">
 
         <LinearLayout
-            android:id="@+id/IconMenuHelp"
+            android:id="@+id/IconMenuEdit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -234,7 +233,6 @@
         android:layout_marginEnd="35dp"
         app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toTopOf="@id/CV_MotorcycleMainMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/CV_KmMotorcycle"
         app:layout_constraintTop_toBottomOf="@id/MotoSlideImg"
