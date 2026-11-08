@@ -49,4 +49,8 @@
     <string name="repairs">Reparacions</string>
     <string name="tires">Pneumàtics</string>
     <string name="others">Altres</string>
+    <string name="next">Següent</string>
+    <string name="skip">Ometre</string>
+    <string name="welcome_title">Benvingut a MotoTrack</string>
+    <string name="welcome_desc">Mantén el control dels teus manteniments, despeses i viatges fàcilment.</string>
 </resources>

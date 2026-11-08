@@ -61,4 +61,8 @@
     <string name="tires">Tires</string>
     <string name="others">Others</string>
     <string name="zero_amount" translatable="false">0,00 €</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_title">Welcome to MotoTrack</string>
+    <string name="welcome_desc">Track your motorcycle maintenance, expenses, and trips easily.</string>
 </resources>

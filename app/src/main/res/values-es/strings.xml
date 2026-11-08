@@ -49,4 +49,8 @@
     <string name="repairs">Reparaciones</string>
     <string name="tires">Neumáticos</string>
     <string name="others">Otros</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Omitir</string>
+    <string name="welcome_title">Bienvenido a MotoTrack</string>
+    <string name="welcome_desc">Mantén el control de tus mantenimientos, gastos y viajes fácilmente.</string>
 </resources>
