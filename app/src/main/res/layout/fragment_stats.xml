@@ -24,7 +24,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/layoutChangeMotorcycle"
         android:layout_width="100dp"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"

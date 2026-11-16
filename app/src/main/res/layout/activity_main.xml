@@ -21,6 +21,7 @@
         android:id="@+id/BottomMenu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:baselineAligned="false"
         android:background="?attr/colorOnSecondary"
         android:elevation="8dp"
         android:gravity="center"
@@ -36,26 +37,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/custom_input_main"
             android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
             android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/IconReminders"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_remainder"
-                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextReminders"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
                 android:text="@string/reminders"
-                android:textColor="?attr/colorOnSurfaceVariant"
-                android:textSize="10sp" />
+                android:textColor="@color/custom_bottom_menu_color"
+                android:textSize="11sp"
+                app:drawableTint="@color/custom_bottom_menu_color"
+                app:drawableTopCompat="@drawable/ic_remainder" />
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A0A0A0" />
 
         <!-- ESTADÍSTICAS + GASTOS -->
         <LinearLayout
@@ -63,26 +69,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/custom_input_main"
             android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
             android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/IconStats"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_stats"
-                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextStats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
                 android:text="@string/stats"
-                android:textColor="?attr/colorOnSurfaceVariant"
-                android:textSize="10sp" />
+                android:textColor="@color/custom_bottom_menu_color"
+                android:textSize="11sp"
+                app:drawableTint="@color/custom_bottom_menu_color"
+                app:drawableTopCompat="@drawable/ic_stats" />
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A0A0A0" />
 
         <!-- Inicio -->
         <LinearLayout
@@ -90,26 +101,33 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/custom_input_main"
             android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
             android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/IconHome"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_home"
-                app:tint="?attr/colorPrimary" />
+            <requestFocus />
 
             <TextView
                 android:id="@+id/TextHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
                 android:text="@string/home"
-                android:textColor="?attr/colorPrimary"
-                android:textSize="10sp" />
+                android:textColor="@color/custom_bottom_menu_color"
+                android:textSize="11sp"
+                app:drawableTint="@color/custom_bottom_menu_color"
+                app:drawableTopCompat="@drawable/ic_home" />
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A0A0A0" />
 
         <!-- MOTOS -->
         <LinearLayout
@@ -117,26 +135,31 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/custom_input_main"
             android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
             android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/IconMotos"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_motorcycle"
-                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextMotos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
                 android:text="@string/motorcycle"
-                android:textColor="?attr/colorOnSurfaceVariant"
-                android:textSize="10sp" />
+                android:textColor="@color/custom_bottom_menu_color"
+                android:textSize="11sp"
+                app:drawableTint="@color/custom_bottom_menu_color"
+                app:drawableTopCompat="@drawable/ic_motorcycle" />
         </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A0A0A0" />
 
         <!-- CUENTA + SETTINGS -->
         <LinearLayout
@@ -144,25 +167,25 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/custom_input_main"
             android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
             android:focusable="true"
             android:gravity="center"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/IconAccount"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_account_box"
-                app:tint="?attr/colorOnSurfaceVariant" />
 
             <TextView
                 android:id="@+id/TextAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
                 android:text="@string/account"
-                android:textColor="?attr/colorOnSurfaceVariant"
-                android:textSize="10sp" />
+                android:textColor="@color/custom_bottom_menu_color"
+                android:textSize="11sp"
+                app:drawableTint="@color/custom_bottom_menu_color"
+                app:drawableTopCompat="@drawable/ic_account_box" />
         </LinearLayout>
 
     </LinearLayout>

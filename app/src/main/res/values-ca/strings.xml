@@ -53,4 +53,11 @@
     <string name="skip">Ometre</string>
     <string name="welcome_title">Benvingut a MotoTrack</string>
     <string name="welcome_desc">Mantén el control dels teus manteniments, despeses i viatges fàcilment.</string>
+    <string name="accountIcon">Icona del compte</string>
+    <string name="statsIcon">Icona d\'estadístiques</string>
+    <string name="homeIcon">Icona d\'inici</string>
+    <string name="motorcycleIcon">Icona de motocicleta</string>
+    <string name="remindersIcon">Icona de recordatoris</string>
+    <string name="CalendarAddIcon">Icona d\'afegir al calendari</string>
+    <string name="arrowBackIcon">Icona de fletxa enrere</string>
 </resources>

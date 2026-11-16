@@ -53,4 +53,11 @@
     <string name="skip">Omitir</string>
     <string name="welcome_title">Bienvenido a MotoTrack</string>
     <string name="welcome_desc">Mantén el control de tus mantenimientos, gastos y viajes fácilmente.</string>
+    <string name="accountIcon">Icono de cuenta</string>
+    <string name="statsIcon">Icono de estadísticas</string>
+    <string name="homeIcon">Icono de inicio</string>
+    <string name="motorcycleIcon">Icono de motocicleta</string>
+    <string name="remindersIcon">Icono de recordatorios</string>
+    <string name="CalendarAddIcon">Icono de añadir al calendario</string>
+    <string name="arrowBackIcon">Icono de flecha hacia atrás</string>
 </resources>

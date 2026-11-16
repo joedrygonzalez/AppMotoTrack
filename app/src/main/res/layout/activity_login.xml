@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_text"
-        app:layout_constraintWidth_max="550dp"
+        app:layout_constraintWidth_max="488dp"
         app:layout_constraintWidth_percent="0.5">
 
         <LinearLayout
@@ -83,6 +83,7 @@
                 android:autofillHints="password"
                 android:background="@drawable/custom_input"
                 android:drawableStart="@drawable/custom_lock_icon"
+                android:drawableEnd="@drawable/custom_eye_icon"
                 android:drawablePadding="14dp"
                 android:ems="10"
                 android:hint="@string/password"
@@ -99,7 +100,7 @@
             <TextView
                 android:id="@+id/text_forgottenpass"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/forgottenpass"
@@ -120,7 +121,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layoutCompactEmail"
-        app:layout_constraintWidth_max="400dp"
+        app:layout_constraintWidth_max="320dp"
         app:layout_constraintWidth_percent="0.8">
 
         <Button
@@ -138,14 +139,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
                 android:text="@string/textcreateaccount"
-                android:textSize="16sp"
-                android:layout_marginEnd="5dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/text_sign"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/sign"

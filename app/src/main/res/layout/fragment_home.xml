@@ -26,11 +26,12 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/CV_help"
         android:layout_width="100dp"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:layout_marginTop="10dp"
         app:cardCornerRadius="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/CV_RemainderMainMenu"
-        app:layout_constraintTop_toBottomOf="@+id/MotoSlideImg">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MotoSlideImg"
+        android:layout_marginEnd="35dp">
 
         <LinearLayout
             android:id="@+id/IconMenuHelp"
@@ -38,22 +39,17 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingStart="5dp">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/ic_help"
-                app:tint="?attr/colorOnSurfaceVariant">
-
-            </ImageView>
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/help">
+                android:text="@string/help"
+                app:drawableStartCompat="@drawable/ic_help"
+                app:drawableTint="?attr/colorOnSurfaceVariant">
 
             </TextView>
         </LinearLayout>
@@ -85,10 +81,9 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:contentDescription="@string/statsIcon"
                 android:src="@drawable/ic_stats"
-                app:tint="?attr/colorOnSurfaceVariant">
-
-            </ImageView>
+                app:tint="?attr/colorOnSurfaceVariant" />
 
         </LinearLayout>
 
@@ -118,10 +113,9 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:contentDescription="@string/remindersIcon"
                 android:src="@drawable/ic_remainder"
-                app:tint="?attr/colorOnSurfaceVariant">
-
-            </ImageView>
+                app:tint="?attr/colorOnSurfaceVariant" />
 
         </LinearLayout>
 
@@ -149,10 +143,9 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:contentDescription="@string/accountIcon"
                 android:src="@drawable/ic_account_box"
-                app:tint="?attr/colorOnSurfaceVariant">
-
-            </ImageView>
+                app:tint="?attr/colorOnSurfaceVariant" />
 
         </LinearLayout>
 
@@ -182,10 +175,9 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
+                android:contentDescription="@string/motorcycleIcon"
                 android:src="@drawable/ic_motorcycle"
-                app:tint="?attr/colorOnSurfaceVariant">
-
-            </ImageView>
+                app:tint="?attr/colorOnSurfaceVariant" />
 
         </LinearLayout>
 

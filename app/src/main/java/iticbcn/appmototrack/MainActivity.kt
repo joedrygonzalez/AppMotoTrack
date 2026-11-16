@@ -13,17 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val BtnReminders = findViewById<View>(R.id.BtnReminders)
-        val BtnStats = findViewById<View>(R.id.BtnStats)
-        val BtnHome = findViewById<View>(R.id.BtnHome)
-        val BtnMotos = findViewById<View>(R.id.BtnMotos)
-        val BtnAccount = findViewById<View>(R.id.BtnAccount)
+        val btnHome = findViewById<View>(R.id.BtnHome)
 
         if (savedInstanceState == null) {
+            btnHome.isSelected = true
             loadFragment(HomeFragment())
         }
 
-        BtnHome.setOnClickListener {
+        btnHome.setOnClickListener {
             loadFragment(HomeFragment())
         }
 

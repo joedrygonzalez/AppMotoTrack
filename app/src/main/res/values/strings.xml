@@ -65,4 +65,12 @@
     <string name="skip">Skip</string>
     <string name="welcome_title">Welcome to MotoTrack</string>
     <string name="welcome_desc">Track your motorcycle maintenance, expenses, and trips easily.</string>
+    <string name="accountIcon">Account icon</string>
+    <string name="statsIcon">Stats icon</string>
+    <string name="homeIcon">Home icon</string>
+    <string name="motorcycleIcon">Motorcycle icon</string>
+    <string name="remindersIcon">Reminders icon</string>
+    <string name="CalendarAddIcon">Calendar add icon</string>
+    <string name="arrowBackIcon">Arrow Back Icon</string>
+    <string name="version" translatable="false">Version 1.0</string>
 </resources>

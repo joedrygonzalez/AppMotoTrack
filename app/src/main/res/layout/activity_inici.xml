@@ -15,12 +15,12 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/app_name"
         android:src="@drawable/logo_mototrack"
-        app:layout_constraintWidth_percent="0.75"
-        app:layout_constraintWidth_max="350dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="350dp"
+        app:layout_constraintWidth_percent="0.75" />
 
     <Button
         android:id="@+id/btn_login"
@@ -31,11 +31,11 @@
         android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintWidth_max="400dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_sign"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_max="320dp"
+        app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/btn_sign"
@@ -46,9 +46,9 @@
         android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintWidth_max="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_max="320dp"
+        app:layout_constraintWidth_percent="0.8" />
 </androidx.constraintlayout.widget.ConstraintLayout>
