@@ -63,6 +63,7 @@
                 android:inputType="textEmailAddress"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -76,20 +77,36 @@
                 android:text="@string/password"
                 android:textSize="25sp" />
 
-            <EditText
-                android:id="@+id/password"
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:autofillHints="password"
+                android:addStatesFromChildren="true"
                 android:background="@drawable/custom_input"
-                android:drawableStart="@drawable/custom_lock_icon"
-                android:drawableEnd="@drawable/custom_eye_icon"
-                android:drawablePadding="14dp"
-                android:ems="10"
-                android:hint="@string/password"
-                android:inputType="textPassword"
                 android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
+                android:paddingEnd="12dp">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="45dp"
+                    android:autofillHints="password"
+                    android:background="@null"
+                    android:drawableStart="@drawable/custom_lock_icon"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+                <ImageButton
+                    android:id="@+id/btnViewPassword"
+                    android:layout_width="48dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@null"
+                    android:contentDescription="@string/password"
+                    android:src="@drawable/custom_eye_icon" />
+            </FrameLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +115,7 @@
             android:gravity="end">
 
             <TextView
-                android:id="@+id/text_forgottenpass"
+                android:id="@+id/text_forgottenPass"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:clickable="true"
@@ -155,4 +172,5 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

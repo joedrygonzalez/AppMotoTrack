@@ -1,11 +1,9 @@
 package iticbcn.appmototrack
 
-import android.content.res.ColorStateList
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.TextViewCompat
 import androidx.fragment.app.Fragment
 
 import iticbcn.appmototrack.fragments.MotorcycleFragment
@@ -15,21 +13,14 @@ import iticbcn.appmototrack.fragments.HomeFragment
 import iticbcn.appmototrack.fragments.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var buttons: Array<LinearLayout>
     private lateinit var icons: Array<TextView>
     private lateinit var texts: Array<TextView>
-
-    private var selectedColor = 0
-    private var normalColor = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Colores
-        selectedColor = getColor(R.color.yellow_primary)
-        normalColor = getColor(R.color.text_secondary)
 
         // Botones
         buttons = arrayOf(
@@ -86,28 +77,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun selectFragment(fragment: Fragment, selected: Int) {
-
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, fragment)
             .commit()
 
-        updateMenu(selected)
-    }
-
-    private fun updateMenu(selected: Int) {
-
-        for (i in icons.indices) {
-
-            val isSelected = (i == selected)
-            val color = if (isSelected) {
-                selectedColor
-            } else {
-                normalColor
-            }
-
-            buttons[i].isSelected = isSelected
-            TextViewCompat.setCompoundDrawableTintList(icons[i], ColorStateList.valueOf(color))
-            texts[i].setTextColor(color)
+        for (i in buttons.indices) {
+            buttons[i].isSelected = (i == selected)
         }
     }
+
+
 }

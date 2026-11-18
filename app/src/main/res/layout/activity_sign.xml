@@ -25,12 +25,12 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/layoutCompactLogin"
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutCompactCreateAcc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
+        android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/layoutCompactSign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,115 +38,152 @@
         app:layout_constraintWidth_max="488dp"
         app:layout_constraintWidth_percent="0.5">
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/user"
-                android:textSize="25sp" />
-
-            <EditText
-                android:id="@+id/user"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:autofillHints="username"
-                android:background="@drawable/custom_input"
-                android:drawableStart="@drawable/custom_user_icon"
-                android:drawablePadding="14dp"
-                android:ems="10"
-                android:hint="@string/user"
-                android:inputType="textPersonName"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/email"
-                android:textSize="25sp" />
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/email"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:autofillHints="username"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/custom_user_icon"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/user"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:autofillHints="emailAddress"
-                android:background="@drawable/custom_input"
-                android:drawableStart="@drawable/custom_email_icon"
-                android:drawablePadding="14dp"
-                android:ems="10"
-                android:hint="@string/email_hint"
-                android:inputType="textEmailAddress"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/password"
-                android:textSize="25sp" />
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/password"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/custom_email_icon"
+                    android:drawablePadding="14dp"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:autofillHints="password"
-                android:background="@drawable/custom_input"
-                android:drawableStart="@drawable/custom_lock_icon"
-                android:drawableEnd="@drawable/custom_eye_icon"
-                android:drawablePadding="14dp"
-                android:ems="10"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/confirmpassword"
-                android:textSize="25sp" />
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/passwordconfirm"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textSize="25sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="45dp"
+                        android:autofillHints="password"
+                        android:background="@null"
+                        android:drawableStart="@drawable/custom_lock_icon"
+                        android:drawablePadding="12dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword" />
+
+                    <ImageButton
+                        android:id="@+id/btnViewPassword"
+                        android:layout_width="48dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="@null"
+                        android:contentDescription="@string/password"
+                        android:src="@drawable/custom_eye_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:autofillHints="password"
-                android:background="@drawable/custom_input"
-                android:drawableStart="@drawable/custom_lock_icon"
-                android:drawableEnd="@drawable/custom_eye_icon"
-                android:drawablePadding="14dp"
-                android:ems="10"
-                android:hint="@string/confirmpassword"
-                android:inputType="textPassword"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp" />
-        </LinearLayout>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmpassword"
+                    android:textSize="25sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="45dp"
+                        android:autofillHints="password"
+                        android:background="@null"
+                        android:drawableStart="@drawable/custom_lock_icon"
+                        android:drawablePadding="12dp"
+                        android:hint="@string/confirmpassword"
+                        android:inputType="textPassword" />
+
+                    <ImageButton
+                        android:id="@+id/btnViewConfirmPassword"
+                        android:layout_width="48dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="@null"
+                        android:contentDescription="@string/password"
+                        android:src="@drawable/custom_eye_icon" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/layoutCompactSign"
@@ -157,7 +194,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutCompactLogin"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCompactCreateAcc"
         app:layout_constraintWidth_max="320dp"
         app:layout_constraintWidth_percent="0.8">
 
@@ -171,21 +208,22 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="48dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
                 android:text="@string/ihaveaccount"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/text_login"
-                android:layout_width="48dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
                 android:clickable="true"
                 android:focusable="true"
+                android:gravity="center_vertical"
                 android:text="@string/login"
                 android:textColor="@color/blue_primary"
                 android:textSize="16sp"
