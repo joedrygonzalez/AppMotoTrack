@@ -2,15 +2,25 @@ package iticbcn.appmototrack
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.animation.OvershootInterpolator
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class IniciActivity : AppCompatActivity() {
     private lateinit var btnSign: Button
     private lateinit var btnLogin: Button
+    private var dadesCarregades = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
+
+        splashScreen.setKeepOnScreenCondition {
+            !dadesCarregades
+        }
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_inici)

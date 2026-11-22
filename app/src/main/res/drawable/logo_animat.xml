@@ -1,0 +1,4 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/logo_splash">
+    <target android:name="logo_scale" android:animation="@animator/logo_moto_pulse_x"/>
+    <target android:name="logo_scale" android:animation="@animator/logo_moto_pulse_y"/>
+</animated-vector>
