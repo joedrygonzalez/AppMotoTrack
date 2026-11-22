@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun selectFragment(fragment: Fragment, selected: Int) {
+    fun selectFragment(fragment: Fragment, selected: Int) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, fragment)
             .commit()
