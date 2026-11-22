@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import iticbcn.appmototrack.MainActivity
 import iticbcn.appmototrack.R
 import iticbcn.appmototrack.adapters.RemindersAdapter
+import iticbcn.appmototrack.models.Reminder
+import iticbcn.appmototrack.utils.DateUtils
 
 class RemindersFragment : Fragment() {
 
@@ -32,14 +34,15 @@ class RemindersFragment : Fragment() {
             (activity as? MainActivity)?.selectFragment(HelpFragment(), -1)
         }
 
+        val today = DateUtils.getCurrentDateFormatted()
         val sampleReminders = listOf(
-            "Cambio de aceite de motor",
-            "Revisión de líquido de frenos delantero",
-            "Revisión de líquido de frenos trasero",
-            "Inspección de presión de neumáticos",
-            "Tensado y engrase de cadena",
-            "Cambio de filtro de aire",
-            "Revisión técnica anual (ITV)"
+            Reminder(1, "cambio de aceite de motor", today),
+            Reminder(2, "revisión de líquido de frenos delantero", today),
+            Reminder(3, "revisión de líquido de frenos trasero", today),
+            Reminder(4, "inspección de presión de neumáticos", today),
+            Reminder(5, "tensado y engrase de cadena", today),
+            Reminder(6, "cambio de filtro de aire", today),
+            Reminder(7, "revisión técnica anual (ITV)", today)
         )
         val rvReminders = view.findViewById<RecyclerView>(R.id.rvReminders)
         rvReminders?.adapter = RemindersAdapter(sampleReminders)

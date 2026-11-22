@@ -6,8 +6,15 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import iticbcn.appmototrack.R
+import iticbcn.appmototrack.models.Reminder
+import iticbcn.appmototrack.utils.toCapitalized
+import iticbcn.appmototrack.utils.toFormattedString
+import java.util.Date
 
-class RemindersAdapter(private val items: List<String>) :
+/**
+ * Adapter i ViewHolder per al RecyclerView de recordatoris.
+ */
+class RemindersAdapter(private val items: List<Reminder>) :
     RecyclerView.Adapter<RemindersAdapter.ReminderViewHolder>() {
 
     class ReminderViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -21,7 +28,14 @@ class RemindersAdapter(private val items: List<String>) :
     }
 
     override fun onBindViewHolder(holder: ReminderViewHolder, position: Int) {
-        holder.tvReminderText.text = items[position]
+        val reminder = items[position]
+        val formattedTitle = reminder.title.toCapitalized()
+        val formattedDate = if (reminder.date.isNotEmpty()) {
+            reminder.date
+        } else {
+            Date().toFormattedString()
+        }
+        holder.tvReminderText.text = "$formattedTitle - $formattedDate"
     }
 
     override fun getItemCount(): Int = items.size
