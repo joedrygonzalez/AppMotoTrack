@@ -2,9 +2,8 @@ package iticbcn.appmototrack
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.animation.OvershootInterpolator
+import android.os.SystemClock
 import android.widget.Button
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -12,13 +11,15 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 class IniciActivity : AppCompatActivity() {
     private lateinit var btnSign: Button
     private lateinit var btnLogin: Button
-    private var dadesCarregades = false
+    // Variable per controlar si les dades han estat carregades:
+    // private var dadesCarregades = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
 
+        val tempsInici = SystemClock.elapsedRealtime()
         splashScreen.setKeepOnScreenCondition {
-            !dadesCarregades
+            SystemClock.elapsedRealtime() - tempsInici < 3000
         }
 
         super.onCreate(savedInstanceState)
