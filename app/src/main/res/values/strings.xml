@@ -73,4 +73,15 @@
     <string name="CalendarAddIcon">Calendar add icon</string>
     <string name="arrowBackIcon">Arrow Back Icon</string>
     <string name="version" translatable="false">Version 1.0</string>
+    <string name="edit_motorcycle">Editar vehiculo</string>
+    <string name="km_totales">Kilómetros totales</string>
+    <string name="trayectos">Trayectos</string>
+    <string name="trip_a_km">Trip A (km)</string>
+    <string name="trip_b_km">Trip B (km)</string>
+    <string name="ltimo_mantenimiento">Último mantenimiento</string>
+    <string name="ltimo_cambio_de_aceite_km">Último cambio de aceite (km)</string>
+    <string name="l_quido_freno_trasero_km">Líquido freno trasero (km)</string>
+    <string name="l_quido_freno_delantero_km">Líquido freno delantero (km)</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
 </resources>
