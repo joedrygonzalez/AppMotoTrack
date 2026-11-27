@@ -41,8 +41,8 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/help"
             android:scaleType="centerCrop"
-            android:src="@drawable/foto_fondo"
-            app:srcCompat="@drawable/foto_fondo" />
+            android:src="@drawable/r1_sample_img"
+            app:srcCompat="@drawable/r1_sample_img" />
     </androidx.cardview.widget.CardView>
 
     <!-- Text 1: Title -->
