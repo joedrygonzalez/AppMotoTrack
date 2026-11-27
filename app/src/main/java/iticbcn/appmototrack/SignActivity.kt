@@ -32,6 +32,7 @@ class SignActivity : AppCompatActivity() {
     // Eventos de los botones
     private fun initListeners() {
         btnSign.setOnClickListener {
+
             navigateToResult(MainActivity::class.java, user.text.toString(), password.text.toString(), email.text.toString())
         }
 

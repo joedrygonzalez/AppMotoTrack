@@ -73,5 +73,14 @@
     <string name="km_totales">Total de quilòmetres</string>
     <string name="edit_motorcycle">Editar vehicle</string>
     <string name="yes_msg">Sí</string>
+    <string name="ErrPassUpper">La contrasenya ha de tenir com a mínim una majúscula.</string>
+    <string name="ErrPassLength">La contrasenya ha de tenir com a mínim 8 caràcters.</string>
+    <string name="ErrEmailFormat">El format del correu no és vàlid.</string>
+    <string name="ErrEmailEmpty">El correu no pot ser buit.</string>
+    <string name="ErrUserEmpty">L\'usuari no pot ser buit.</string>
+    <string name="ErrPassLower">La contrasenya ha de tenir com a mínim una minúscula.</string>
+    <string name="ErrPassMatch">Les contrasenyes no coincideixen.</string>
+    <string name="ErrPassChar">La contrasenya ha de tenir com a mínim un caràcter especial.</string>
+    <string name="ErrPassDigit">La contrasenya ha de tenir com a mínim un número.</string>
 
 </resources>

@@ -95,4 +95,13 @@
     <string name="km_totales">Total kilometers</string>
     <string name="edit_motorcycle">Edit vehicle</string>
     <string name="yes_msg">Yes</string>
+    <string name="ErrPassUpper">The password must contain at least one uppercase letter.</string>
+    <string name="ErrPassLength">The password must be at least 8 characters long.</string>
+    <string name="ErrEmailFormat">The email format is invalid.</string>
+    <string name="ErrEmailEmpty">The email cannot be empty.</string>
+    <string name="ErrUserEmpty">The user cannot be empty.</string>
+    <string name="ErrPassLower">The password must contain at least one lowercase letter.</string>
+    <string name="ErrPassMatch">The passwords do not match.</string>
+    <string name="ErrPassChar">The password must contain at least one special character.</string>
+    <string name="ErrPassDigit">The password must contain at least one number.</string>
 </resources>
