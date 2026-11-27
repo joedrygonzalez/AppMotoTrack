@@ -36,14 +36,14 @@ class SettingsFragment : Fragment() {
     private fun showLogoutDialog() {
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.settings)
-            .setMessage("Vols tancar la sessió i tornar a la pantalla d'inici?")
-            .setPositiveButton("Sí") { dialog, _ ->
+            .setMessage(getString(R.string.logout_msg))
+            .setPositiveButton(getString(R.string.yes_msg)) { dialog, _ ->
                 dialog.dismiss()
                 val intent = Intent(requireContext(), IniciActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
             }
-            .setNegativeButton("Cancel·lar") { dialog, _ ->
+            .setNegativeButton(R.string.cancel) { dialog, _ ->
                 dialog.dismiss()
             }
             .create()

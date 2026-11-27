@@ -60,4 +60,18 @@
     <string name="remindersIcon">Icona de recordatoris</string>
     <string name="CalendarAddIcon">Icona d\'afegir al calendari</string>
     <string name="arrowBackIcon">Icona de fletxa enrere</string>
+    <string name="logout_msg">Vols tancar la sessió i tornar a la pantalla d\'inici?</string>
+    <string name="trip_a_km">Trajectes A (km)</string>
+    <string name="trayectos">Trajectes</string>
+    <string name="trip_b_km">Trajectes B (km)</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancel·la</string>
+    <string name="l_quido_freno_delantero_km">Líquid fre davanter (km)</string>
+    <string name="l_quido_freno_trasero_km">Líquid de fre posterior (km)</string>
+    <string name="ltimo_cambio_de_aceite_km">Últim canvi d\'oli (km)</string>
+    <string name="ltimo_mantenimiento">Últim manteniment</string>
+    <string name="km_totales">Total de quilòmetres</string>
+    <string name="edit_motorcycle">Editar vehicle</string>
+    <string name="yes_msg">Sí</string>
+
 </resources>

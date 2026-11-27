@@ -60,4 +60,18 @@
     <string name="remindersIcon">Icono de recordatorios</string>
     <string name="CalendarAddIcon">Icono de añadir al calendario</string>
     <string name="arrowBackIcon">Icono de flecha hacia atrás</string>
+    <string name="logout_msg">¿Quieres cerrar sesión y volver a la pantalla de inicio?</string>
+    <string name="edit_motorcycle">Editar vehiculo</string>
+    <string name="km_totales">Kilómetros totales</string>
+    <string name="trayectos">Trayectos</string>
+    <string name="trip_a_km">Trayecto A (km)</string>
+    <string name="trip_b_km">Trayecto B (km)</string>
+    <string name="ltimo_mantenimiento">Último mantenimiento</string>
+    <string name="ltimo_cambio_de_aceite_km">Último cambio de aceite (km)</string>
+    <string name="l_quido_freno_trasero_km">Líquido freno trasero (km)</string>
+    <string name="l_quido_freno_delantero_km">Líquido freno delantero (km)</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="yes_msg">Si</string>
+
 </resources>
