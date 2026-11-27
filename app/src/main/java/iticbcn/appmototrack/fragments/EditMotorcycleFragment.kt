@@ -63,6 +63,11 @@ class EditMotorcycleFragment : BottomSheetDialogFragment() {
                     apply()
                 }
 
+                parentFragmentManager.setFragmentResult(
+                    "motorcycleUpdated",
+                    Bundle()
+                )
+
                 dismiss()
             }
 

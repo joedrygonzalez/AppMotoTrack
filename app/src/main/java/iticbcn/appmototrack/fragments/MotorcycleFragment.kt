@@ -57,6 +57,13 @@ class MotorcycleFragment : Fragment() {
             view.findViewById<RecyclerView>(R.id.rvMotorcycleReminders)
 
         rvReminders?.adapter = RemindersAdapter(sampleReminders)
+
+        parentFragmentManager.setFragmentResultListener(
+            "motorcycleUpdated",
+            viewLifecycleOwner
+        ) { _, _ ->
+            onResume()
+        }
     }
     override fun onResume() {
         super.onResume()
